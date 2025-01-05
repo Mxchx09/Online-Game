@@ -5,7 +5,7 @@ import pickle
 # Server-Socket erstellen
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(("127.0.0.1", 5555))
-server.listen(2)  # Maximale Anzahl an Spielern (2)
+server.listen(4)  # Maximale Anzahl an Spielern (4)
 
 players = []
 player_sockets = []  # Store the socket references separately
